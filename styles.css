@@ -1,0 +1,107 @@
+.main-container {
+    display: grid;
+    grid-template-rows: 80px 80px 80px;
+    grid-template-columns: 80px 80px 80px;
+    row-gap: 4px;
+    column-gap: 4px;
+    justify-content: center;
+    align-content: center;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+}
+
+.playing-area {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#remarks {
+    display: flex;
+    justify-content: center;
+}
+
+#giveup-btn {
+    background-color: #fd6a02;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    font-size: larger;
+    border-radius: 7px;
+    outline: 0;
+    border: 1px black solid;
+    align-self: center;
+}
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#giveup-overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+  }
+
+  #overlay>h1 {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      font-size: 50px;
+      color: white;
+      transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+  }
+  
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 35px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  #score {
+      color: #fd6a02;
+  }
+
+  #try-again {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    font-size: 35px;
+    color: white;
+    border-radius: 10px;
+    outline: 0;
+    background-color: #fd6a02;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
